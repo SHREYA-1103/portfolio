@@ -1,6 +1,8 @@
 reference video link: https://www.youtube.com/watch?v=0YFrGy_mzjY
 reference video for typed text animation: https://youtu.be/42M9esAvAEU
 reference video for github hosting: https://www.youtube.com/watch?v=M5mg0r4ajt4
+                                    https://www.youtube.com/watch?v=XGcuxuhV-Jg
+
 
 html boiler plate: https://www.freecodecamp.org/news/html-starter-template-a-basic-html5-boilerplate-for-index-html/
 

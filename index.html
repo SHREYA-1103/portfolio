@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Shreya Portfolio Website</title>
         <link rel="stylesheet" href="style.css">
-    
+        <script src="https://kit.fontawesome.com/cd4eb40196.js" crossorigin="anonymous"></script>
     </head>
 <body>
     <div id="header">
@@ -23,20 +23,101 @@
                 </ul>
             </nav>
             <div class="header-text">
-                <h1>
-                    Hi, I am <span class="auto-input"></span><br>from India.
-                </h1>
+                <h1>Hi, I am <span class="auto-input"></span><br>from India.</h1>
             </div>
         </div>
     </div>
+
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <script>
         var typed=new Typed(".auto-input",{
-            strings:["Shreya Gupta","Web Developer", "Python Developer","AI/ML Developer"],
+            strings:["Shreya Gupta","AI/ML Developer"],
             typeSpeed: 100,
             backSpeed: 100,
             loop:true
         })
     </script>
+<!--------------about--------------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla illo iure doloribus amet mollitia, soluta quod dicta id blanditiis accusamus quibusdam labore ratione voluptas nisi, tenetur odio consectetur, eaque assumenda.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>AI/ML</span><br>Designing Web interfaces</li>
+                            <li><span>Web Development</span><br>Web App Development</li>
+                            <li><span>Python Developer</span><br>Developing python scripts</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>March 2022 - present</span><br>Technical Core Commitee Member, Sigma Xi, VIT</li>
+                            <li><span>March 2022 - present</span><br>Technical Core Commitee Member, SIAM, VIT</li>
+                            <li><span>March 2022 - August 2022</span><br>Technical Core Commitee Member, IEEE WIE, VIT</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2025</span><br>Btech, Computer Science and Engineering (Spec. Bioinformatics) - VIT, Vellore</li>
+                            <li><span>2021</span><br>Class 12 (CBSE) - PCMB Stream</li>
+                            <li><span>2019</span><br>Class 10 (CBSE)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+<!-- -----------------services------------------ -->
+    <div id="projects">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="projects-list">
+                <div>
+                    <i class="fa-sharp fa-solid fa-code"></i>
+                    <h2>Birthday Manager</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem asperiores dignissimos similique aliquam obcaecati autem dolor a quasi eius mollitia doloremque praesentium amet natus id eaque perspiciatis sequi, provident animi.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-cake-candles"></i>
+                    <h2>Birthday Manager</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem asperiores dignissimos similique aliquam obcaecati autem dolor a quasi eius mollitia doloremque praesentium amet natus id eaque perspiciatis sequi, provident animi.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-python"></i>
+                    <h2>Birthday Manager</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem asperiores dignissimos similique aliquam obcaecati autem dolor a quasi eius mollitia doloremque praesentium amet natus id eaque perspiciatis sequi, provident animi.</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- -----------------achievements---------------- -->
+
 </body>
 </html>
