@@ -19,5 +19,6 @@ use width: 100%;
     height: 100vh;
     background-size: cover;
     background-position: center;  for responsive websites
+use media query for creating mobile responsive websites
 
 
