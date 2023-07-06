@@ -14,12 +14,12 @@ body{
     background: #080808;
     color: #fff;
 }
-
+ 
 #header{
     width: 100%;
     height: 100vh;
     background-image: url(images/background.png);
-    background-size: cover;
+    background-size: cover;     
     background-position: center;
 }
 
@@ -83,9 +83,8 @@ nav ul li a:hover::after{
 
 /* -----------------------about----------------------- */
 #about{
-    padding: 80px 0;
+    padding: 40px 0;
     color: #ababab;
-
 }
 
 .row{
@@ -162,7 +161,7 @@ nav ul li a:hover::after{
 
 /* -------------------------projects----------------------- */
 #projects{
-    padding: 30px 0;
+    padding: 40px 0;
 }
 
 .projects-list{
@@ -205,13 +204,167 @@ nav ul li a:hover::after{
     transform: translateY(-10px);
 }
 
+.btn1{
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid #fff;
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    transition: background 0.5s;
+}
+
+.btn1:hover{
+    background: #262626;
+}
+
+/* ---------------------achievements------------------------- */
+#achievements{
+    padding: 40px 0;
+}
+
+.slide-container{
+    max-width: 2000px;
+    width: 100%;
+    padding: 40px 0;
+    margin-top: 60px;
+}
+
+.slide-content{
+    margin: 0 40px;
+    overflow: hidden;
+    border-radius: 25px;
+}
+
+.card{
+    border-radius: 25px;
+    background-color: #fff;
+}
+  
+.image-content,
+.card-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 14px;
+}
+ 
+.image-content{
+    position: relative;
+    row-gap: 5px;
+    padding: 25px 0;
+}
+  
+.overlay{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color:#d81e56;
+    border-radius: 25px 25px 0 25px;
+}
+  
+.overlay::before,
+.overlay::after{
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: -40px;
+    height: 40px;
+    width: 40px;
+    background-color: #d81e56;
+}
+  
+.overlay::after{
+    border-radius: 0 25px 0 0;
+    background-color: #fff;
+}
+
+.card-image{
+    position: relative;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background: #fff;
+    padding: 3px;
+}
+  
+.card-image .card-img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #d81e56;
+}
+  
+.name{
+    font-size: 18px;
+    font-weight: 1000;
+    color: #080808;
+}
+  
+.description{
+    font-size: 14px;
+    color: rgb(58, 56, 56);
+    text-align: center;
+}
+  
+.button{
+    border: none;
+    font-size: 16px;
+    color: #FFF;
+    padding: 8px 16px;
+    background-color: #d81e56;
+    border-radius: 6px;
+    margin: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+  
+.button:hover{
+    background: #5a031d;
+}
+  
+.swiper-navBtn{
+    color: #a14c66;
+    transition: color 0.3s ease;
+}
+  
+.swiper-navBtn:hover{
+    color: #d81e56;
+}
+  
+.swiper-navBtn::before,
+.swiper-navBtn::after{
+    font-size: 35px;
+    color: #d81e56;
+}
+  
+.swiper-button-next{
+    right: 0;
+}
+  
+.swiper-button-prev{
+    left: 0;
+}
+
 /* ---------------------contact------------------------- */
+#contact{
+    padding: 40px 0;
+}
+
 .contact-left{
     flex-basis: 35%;
 }
 
 .contact-right{
     flex-basis: 60%;
+    margin-top: 60px;
 }
 
 .contact-left p{
@@ -296,7 +449,6 @@ form .bt2{
     width: 100%;
     text-align: center;
     padding: 25px 0;
-    background: #262626;
     font-weight: 300;
     margin-top: 20px;
 }
@@ -376,6 +528,14 @@ nav .fa-solid{
 
     .copyright{
         font-size: 14px;
+    }
+
+    .slide-content{
+        margin: 0 10px;
+    }
+      
+    .swiper-navBtn{
+        display: none;
     }
 }
 
